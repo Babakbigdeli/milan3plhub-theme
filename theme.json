@@ -6,12 +6,12 @@
 			"palette": [
 				{ "slug": "base", "name": "White", "color": "#FFFFFF" },
 				{ "slug": "contrast", "name": "Ink", "color": "#14212B" },
-				{ "slug": "accent-1", "name": "Signal amber", "color": "#F2A93B" },
-				{ "slug": "accent-2", "name": "Petrol", "color": "#0E5E6F" },
+				{ "slug": "accent-1", "name": "Logo gold", "color": "#B8883C" },
+				{ "slug": "accent-2", "name": "Logo navy", "color": "#032553" },
 				{ "slug": "accent-3", "name": "Steel", "color": "#5B6770" },
 				{ "slug": "accent-4", "name": "Concrete", "color": "#F4F2EE" },
 				{ "slug": "accent-5", "name": "Rule", "color": "#DAD6CF" },
-				{ "slug": "accent-6", "name": "Petrol tint", "color": "#E3EEF0" }
+				{ "slug": "accent-6", "name": "Navy tint", "color": "#E7ECF4" }
 			]
 		},
 		"layout": {
@@ -71,7 +71,7 @@
 		},
 		"elements": {
 			"heading": {
-				"color": { "text": "var(--wp--preset--color--contrast)" },
+				"color": { "text": "var(--wp--preset--color--accent-2)" },
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--archivo)",
 					"fontWeight": "700",
@@ -92,7 +92,7 @@
 				"border": { "radius": "8px" },
 				"color": {
 					"background": "var(--wp--preset--color--accent-1)",
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--accent-2)"
 				},
 				"spacing": {
 					"padding": { "top": "0.85rem", "bottom": "0.85rem", "left": "1.4rem", "right": "1.4rem" }
@@ -104,8 +104,8 @@
 				},
 				":hover": {
 					"color": {
-						"background": "#E0952A",
-						"text": "var(--wp--preset--color--contrast)"
+						"background": "#CFA458",
+						"text": "var(--wp--preset--color--accent-2)"
 					}
 				}
 			}
