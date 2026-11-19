@@ -4,7 +4,7 @@ Theme URI: https://milan3plhub.com
 Author: Milan3PLHub
 Description: Child theme of Twenty Twenty-Five for Milan3PLHub. Colours, fonts and layout are in theme.json; component styles are below.
 Template: twentytwentyfive
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 6.6
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -123,6 +123,14 @@ body{-webkit-font-smoothing:antialiased}
 @media (max-width:600px){.m-header .m-head-cta{display:none}}
 .wp-block-navigation__responsive-container.is-menu-open{padding-top:5rem}
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item{font-size:1.25rem}
+
+/* Logo */
+.m-brand{display:inline-flex;flex-direction:column;gap:.35rem;text-decoration:none;line-height:1}
+.m-brand img{display:block;height:48px;width:auto}
+.m-brand .m-tag{font-family:var(--wp--preset--font-family--ibm-plex-mono);font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase;color:var(--m-steel)}
+@media (max-width:600px){.m-header .m-brand img{height:38px}.m-header .m-brand .m-tag{font-size:.625rem}}
+.m-footer .m-brand img{height:44px}
+.m-footer .m-brand .m-tag{color:#9FB0BA}
 
 /* ---------- Footer ---------- */
 .m-footer{background:var(--m-ink);color:#C9D3D9;font-size:.9375rem}
