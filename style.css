@@ -1,17 +1,3 @@
-/*
-Theme Name: Milan3PLHub
-Theme URI: https://milan3plhub.com
-Author: Milan3PLHub
-Description: Child theme of Twenty Twenty-Five for Milan3PLHub. Colours, fonts and layout are in theme.json; component styles are below.
-Template: twentytwentyfive
-Version: 1.3.0
-Requires at least: 6.6
-Requires PHP: 7.4
-License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: milan3plhub
-*/
-
 /* ---------- Tokens and base ---------- */
 :root{--m-ink:#14212B;--m-navy:#032553;--m-navy-2:#0B3470;--m-gold:#B8883C;--m-gold-light:#CFA458;--m-steel:#5B6770;--m-concrete:#EEF4FB;--m-rule:#D6E0EC;--m-tint:#E7ECF4}
 html{scroll-behavior:smooth}
@@ -39,10 +25,10 @@ body{-webkit-font-smoothing:antialiased}
 .m-band-ink{background:var(--m-navy);color:#E6EBF3}
 .m-band-ink :is(h1,h2,h3,h4){color:#fff}
 .m-band-ink a:not(.wp-block-button__link){color:#fff}
-.m-hero{background:radial-gradient(1200px 500px at 85% 15%,rgba(184,136,60,.16),transparent 60%),linear-gradient(135deg,#E3ECF8 0%,#F3F7FC 55%,#FFFFFF 100%);border-bottom:1px solid var(--m-rule)}
+.m-hero{background:var(--m-tint);border-bottom:1px solid var(--m-rule)}
 .m-hero h1{margin-top:.25rem}
 .m-hero-art svg{width:100%;height:auto;display:block}
-.m-pagehead{background:linear-gradient(135deg,#E3ECF8 0%,#F5F8FD 70%,#FFF9EF 100%);border-bottom:1px solid var(--m-rule)}
+.m-pagehead{background:var(--m-tint);border-bottom:1px solid var(--m-rule)}
 .m-split{gap:clamp(1.5rem,4vw,3.5rem)!important}
 .m-diagram svg{width:100%;height:auto;display:block}
 
@@ -159,8 +145,8 @@ body{-webkit-font-smoothing:antialiased}
 .fluentform .ff-message-success{border:1px solid #1F7A4D;background:#EEF7F2;border-radius:10px;padding:1rem 1.25rem;box-shadow:none}
 
 /* ---------- Recolour drawings and icons in page content to the logo palette ----------
-   The SVG drawings inside pages were made with the earlier petrol/amber colours.
-   CSS overrides their fill/stroke attributes, so the pages do not need editing. */
+The SVG drawings inside pages were made with the earlier petrol/amber colours.
+CSS overrides their fill/stroke attributes, so the pages do not need editing. */
 :is(.m-hero-art,.m-diagram,.m-icon,.m-loc) svg [fill="#0E5E6F" i]{fill:var(--m-navy)}
 :is(.m-hero-art,.m-diagram,.m-icon,.m-loc) svg [stroke="#0E5E6F" i]{stroke:var(--m-navy)}
 :is(.m-hero-art,.m-diagram,.m-icon,.m-loc) svg [fill="#F2A93B" i]{fill:var(--m-gold)}
