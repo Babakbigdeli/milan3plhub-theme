@@ -86,6 +86,14 @@ body{-webkit-font-smoothing:antialiased}
 .m-badges li{border:1px solid var(--m-rule);background:#fff;border-radius:999px;padding:.35rem .85rem;font-size:.9375rem;margin:0}
 .m-badges.m-req li{border-style:dashed;color:var(--m-steel)}
 
+/* Platforms and couriers strip (Technology page) */
+.m-integrations{border-bottom:1px solid var(--m-rule)}
+.m-integrations .m-eyebrow{color:var(--m-steel);max-width:34rem;margin-left:auto;margin-right:auto;line-height:1.6}
+.m-logos{list-style:none;margin:2rem auto 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:1.75rem 3rem;max-width:60rem}
+.m-logos li{display:flex;align-items:center;gap:.7rem;margin:0;font-family:var(--wp--preset--font-family--archivo);font-weight:700;font-size:clamp(1.125rem,2.4vw,1.5rem);color:var(--m-ink);letter-spacing:-.01em}
+.m-logos svg{width:2rem;height:2rem;flex:none;fill:none;stroke:var(--m-navy);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:600px){.m-logos{gap:1.5rem 2rem}.m-logos li{flex:0 0 calc(50% - 1rem);justify-content:center}.m-logos li:nth-child(n+5){flex-basis:100%}}
+
 /* FAQ accordions (Details block) */
 .wp-block-details{border-bottom:1px solid var(--m-rule);padding:1rem 0;margin:0!important}
 .wp-block-details summary{font-family:var(--wp--preset--font-family--archivo);font-weight:600;font-size:1.0625rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;min-height:32px;align-items:center}
