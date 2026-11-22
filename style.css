@@ -111,6 +111,7 @@ body{-webkit-font-smoothing:antialiased}
 .m-wordmark .m-3pl{border:1.5px solid var(--m-navy);color:var(--m-navy);border-radius:5px;padding:.05rem .3rem;font-size:1.05rem;margin:0 .1rem}
 .m-wordmark .m-tag{font-family:var(--wp--preset--font-family--ibm-plex-mono);font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase;color:var(--m-steel);margin-top:.35rem}
 .m-header .wp-block-navigation{font-size:.9688rem;font-weight:500}
+.m-header .wp-block-navigation,.m-header .wp-block-navigation__container{gap:1.2rem}
 .m-header .wp-block-navigation a{text-decoration:none}
 .m-header .wp-block-navigation a:hover{color:var(--m-navy)}
 .m-header .wp-block-button__link{padding:.6rem 1rem;min-height:44px;font-size:.9375rem}
