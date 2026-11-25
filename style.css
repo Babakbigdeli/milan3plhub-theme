@@ -1,3 +1,17 @@
+/*
+Theme Name: Milan3PLHub
+Theme URI: https://milan3plhub.com
+Author: Milan3PLHub
+Description: Child theme of Twenty Twenty-Five for Milan3PLHub. Colours, fonts and layout are in theme.json; component styles are below.
+Template: twentytwentyfive
+Version: 1.3.1
+Requires at least: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: milan3plhub
+*/
+
 /* ---------- Tokens and base ---------- */
 :root{--m-ink:#14212B;--m-navy:#032553;--m-navy-2:#0B3470;--m-gold:#B8883C;--m-gold-light:#CFA458;--m-steel:#5B6770;--m-concrete:#EEF4FB;--m-rule:#D6E0EC;--m-tint:#E7ECF4}
 html{scroll-behavior:smooth}
@@ -164,3 +178,19 @@ CSS overrides their fill/stroke attributes, so the pages do not need editing. */
 :is(.m-hero-art,.m-diagram,.m-icon) svg [fill="#FCEBCF" i]{fill:#F3E7D2}
 :is(.m-hero-art,.m-diagram,.m-icon) svg [fill="#14212B" i]{fill:var(--m-navy)}
 :is(.m-hero-art,.m-diagram,.m-icon) svg tspan[fill="#F2A93B" i]{fill:var(--m-gold-light)}
+
+/* ---------- Mobile fixes (v1.3.1) ---------- */
+/* Side margins for full-width sections, so text does not touch the screen edges on phones */
+.m-section{padding-left:clamp(1.5rem,5vw,2.5rem);padding-right:clamp(1.5rem,5vw,2.5rem)}
+
+/* Mobile menu: sits above the sticky bar, left aligned, nothing cut off */
+.m-header:has(.wp-block-navigation__responsive-container.is-menu-open){z-index:100000}
+body:has(.wp-block-navigation__responsive-container.is-menu-open) .m-sticky{display:none!important}
+.wp-block-navigation__responsive-container.is-menu-open{padding:5rem 1.5rem 2.5rem!important;overflow-y:auto}
+.wp-block-navigation__responsive-container.is-menu-open :is(.wp-block-navigation__responsive-container-content,.wp-block-navigation__container,.wp-block-navigation-item,.wp-block-navigation__submenu-container){align-items:flex-start!important;justify-content:flex-start!important;text-align:left!important}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container{padding:.5rem 0 .25rem 1rem!important;border:0!important;box-shadow:none!important}
+
+/* ---------- Legal pages (privacy, cookies, terms) ---------- */
+.m-legaltext h2{font-size:clamp(1.5rem,2.4vw,1.875rem);margin-top:2.5rem;margin-bottom:.75rem}
+.m-legaltext h3{font-size:clamp(1.125rem,1.8vw,1.3125rem);margin-top:1.75rem;margin-bottom:.5rem}
+.m-legaltext li{margin-bottom:.4rem}
